@@ -7,10 +7,6 @@ const addressSchema = new mongoose.Schema({
 const userSchema = new mongoose.Schema({
     name : String,
     age : Number,
-    email :{
-        type : String,
-        required : true
-    },
     createdAt:Date,
     updatedAt:Date,
     address:addressSchema,
